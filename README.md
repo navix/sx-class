@@ -12,7 +12,7 @@ Apply classes to an element.
 ## Installation
 
 ```
-$ ng add @novyk/xsclass
+$ ng add @novyk/sx-class
 ```
 
 
@@ -20,4 +20,17 @@ $ ng add @novyk/xsclass
 
 ### Directive `[sxClass]`
 
+```html
+<div [sxClass]="{color: 'red', active: true, primary: false}">
+<!--<div class="color-red active">-->
+```
+
 ### Service `SxClass`
+
+```typescript
+constructor(private sxClass: SxClass) {}
+...
+this.sxClass.apply({color: 'red', active: true, primary: false});
+```
+
+Adds to element: `class="color-red active"`

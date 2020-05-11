@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local('JetBrains Mono'), local('JetBrains-Mono'), url(assets/JetBrainsMono-Regular.woff2) format('woff2');
+}
+
+:root {
+  --mainColor: #1e0070;
+  --lightColor: #bbb1ef;
+}
+
+body {
+  color: var(--mainColor);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  line-height: 1.5rem;
+  padding: 0 1rem;
+}
+
+a {
+  color: var(--mainColor);
+}
+
+pre {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .9rem;
+  line-height: 1rem;
+}
